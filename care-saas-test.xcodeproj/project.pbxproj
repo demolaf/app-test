@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E196A1C2C1CE4A200199167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E196A1B2C1CE4A200199167 /* LaunchScreen.storyboard */; };
 		7E7034132C1B69600069F118 /* CareSaasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7034122C1B69600069F118 /* CareSaasApp.swift */; };
 		7E7034152C1B69600069F118 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7034142C1B69600069F118 /* ContentView.swift */; };
 		7E7034172C1B69610069F118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E7034162C1B69610069F118 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E196A1B2C1CE4A200199167 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E70340F2C1B69600069F118 /* care-saas-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "care-saas-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7034122C1B69600069F118 /* CareSaasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareSaasApp.swift; sourceTree = "<group>"; };
 		7E7034142C1B69600069F118 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				7E7034142C1B69600069F118 /* ContentView.swift */,
 				7E7034602C1BDD370069F118 /* RepositoryProvider.swift */,
 				7EDD2A7D2C1C434200292319 /* EnvironmentKeys.swift */,
+				7E196A1B2C1CE4A200199167 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E7034232C1B6B8D0069F118 /* Colors.xcassets in Resources */,
+				7E196A1C2C1CE4A200199167 /* LaunchScreen.storyboard in Resources */,
 				7E70341A2C1B69610069F118 /* Preview Assets.xcassets in Resources */,
 				7E7034172C1B69610069F118 /* Assets.xcassets in Resources */,
 			);
@@ -700,6 +704,7 @@
 				INFOPLIST_FILE = "care-saas-test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -729,6 +734,7 @@
 				INFOPLIST_FILE = "care-saas-test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

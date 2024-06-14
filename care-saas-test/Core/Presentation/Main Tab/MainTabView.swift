@@ -19,7 +19,6 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-                .tint(.appPrimary)
                 .tag(Tabs.home)
             SearchView()
                 .tabItem {
@@ -32,6 +31,7 @@ struct MainTabView: View {
                 }
                 .tag(Tabs.search)
         }
+        .tint(.appPrimary)
     }
 }
 
