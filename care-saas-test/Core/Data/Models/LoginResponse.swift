@@ -14,13 +14,11 @@ struct LoginResponse: Codable {
     let data: LoginResponseData
 }
 
-// MARK: - LoginResponse
 struct LoginResponseData: Codable {
     let user: LoginUser
     let userToken: UserToken
 }
 
-// MARK: - User
 struct LoginUser: Codable {
     let sub: String
     let emailVerified: Bool
@@ -42,12 +40,10 @@ struct LoginUser: Codable {
     }
 }
 
-// MARK: - RealmAccess
 struct RealmAccess: Codable {
     let roles: [String]
 }
 
-// MARK: - UserToken
 struct UserToken: Codable {
     let accessToken, refreshToken: String
 
@@ -58,8 +54,8 @@ struct UserToken: Codable {
 }
 
 extension LoginUser {
-    func toUserEntity() -> User {
-        User(
+    func toCurrentUserEntity() -> CurrentUser {
+        CurrentUser(
             userId: userId,
             name: name,
             email: email,

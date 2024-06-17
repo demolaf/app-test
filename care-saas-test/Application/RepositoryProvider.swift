@@ -18,7 +18,7 @@ class RepositoryProvider {
         let dataController = DataController(modelName: "CareSaasTest")
         dataController.load()
         let accessTokenManager = AccessTokenManagerImpl(userDefaults: UserDefaults.standard)
-        let httpClient = HTTPClientImpl(urlSession: URLSession.shared)
+        let httpClient = HTTPClientImpl(urlSession: URLSession.shared, accessTokenManager: accessTokenManager)
 
         // Datasources interact with http client
         let authRemoteDatasource = AuthRemoteDatasourceImpl(httpClient: httpClient, accessTokenManager: accessTokenManager)

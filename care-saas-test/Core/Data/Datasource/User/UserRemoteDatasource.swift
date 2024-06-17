@@ -8,7 +8,8 @@
 import Foundation
 
 protocol UserRemoteDatasource {
-    func getAllUserTasks() async -> Result<AllUserTasksResponse, NetworkError>
+    func getUser(_ id: Int) async -> Result<UserDataResponse, NetworkError>
+    func getAllUserTasks(by id: String) async -> Result<AllUserTasksResponse, NetworkError>
 }
 
 final class UserRemoteDatasourceImpl: UserRemoteDatasource {
@@ -18,9 +19,21 @@ final class UserRemoteDatasourceImpl: UserRemoteDatasource {
     
     let httpClient: HTTPClient
 
-    func getAllUserTasks() async -> Result<AllUserTasksResponse, NetworkError> {
+    func getUser(_ id: Int) async -> Result<UserDataResponse, NetworkError> {
         do {
-            let data: AllUserTasksResponse = try await httpClient.perform(TasksEndpoints.tasks(shortCode: "FKRC", careHomeId: "2", userId: ""))
+            let data: UserDataResponse = try await httpClient.perform(UsersEndpoints.users(userId: id))
+            return .success(data)
+        } catch {
+            if let error = error as? NetworkError {
+                return .failure(error)
+            }
+            return .failure(NetworkError.unknown(message: error.localizedDescription))
+        }
+    }
+
+    func getAllUserTasks(by id: String) async -> Result<AllUserTasksResponse, NetworkError> {
+        do {
+            let data: AllUserTasksResponse = try await httpClient.perform(TasksEndpoints.tasks(shortCode: "FKRC", careHomeId: "2", userId: id))
             return .success(data)
         } catch {
             if let error = error as? NetworkError {

@@ -37,12 +37,12 @@
 		7E92E01F2C1C8B2D00695B54 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E01E2C1C8B2D00695B54 /* LandingViewModel.swift */; };
 		7E92E0212C1C8E9200695B54 /* AllUserTasksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0202C1C8E9200695B54 /* AllUserTasksResponse.swift */; };
 		7E92E0232C1C9A6000695B54 /* HomeTabSectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0222C1C9A6000695B54 /* HomeTabSectionListView.swift */; };
-		7E92E0252C1CBFBD00695B54 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0242C1CBFBD00695B54 /* User.swift */; };
+		7E92E0252C1CBFBD00695B54 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0242C1CBFBD00695B54 /* CurrentUser.swift */; };
 		7E92E0292C1CC0FC00695B54 /* UserLocalDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0282C1CC0FB00695B54 /* UserLocalDatasource.swift */; };
 		7E92E02B2C1CC10700695B54 /* AuthLocalDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E02A2C1CC10700695B54 /* AuthLocalDatasource.swift */; };
 		7E92E02F2C1CC2B000695B54 /* CareSaasTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E02D2C1CC2B000695B54 /* CareSaasTest.xcdatamodeld */; };
 		7E92E0312C1CC87C00695B54 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0302C1CC87C00695B54 /* DataController.swift */; };
-		7E92E0342C1CCB1800695B54 /* UserMO+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0332C1CCB1800695B54 /* UserMO+Extensions.swift */; };
+		7E92E0342C1CCB1800695B54 /* CurrentUserMO+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0332C1CCB1800695B54 /* CurrentUserMO+Extensions.swift */; };
 		7E92E0362C1CD39900695B54 /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E92E0352C1CD39900695B54 /* DatabaseError.swift */; };
 		7EDD2A7A2C1C41B100292319 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD2A792C1C41B100292319 /* LoginResponse.swift */; };
 		7EDD2A7C2C1C420200292319 /* AuthEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD2A7B2C1C420200292319 /* AuthEndpoints.swift */; };
@@ -52,6 +52,12 @@
 		7EDD2A852C1C4F9E00292319 /* APIToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD2A842C1C4F9E00292319 /* APIToken.swift */; };
 		7EDD2A882C1C4FDF00292319 /* AppUserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD2A872C1C4FDF00292319 /* AppUserDefaultsKeys.swift */; };
 		7EDD2A8D2C1C57E200292319 /* TasksEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD2A8C2C1C57E200292319 /* TasksEndpoints.swift */; };
+		7EEBDDB52C206EE4001605AC /* UserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBDDB42C206EE3001605AC /* UserTask.swift */; };
+		7EEBDDB72C20740F001605AC /* UsersEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBDDB62C20740F001605AC /* UsersEndpoints.swift */; };
+		7EEBDDB92C207C24001605AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBDDB82C207C24001605AC /* User.swift */; };
+		7EEBDDBB2C207C37001605AC /* UserDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBDDBA2C207C37001605AC /* UserDataResponse.swift */; };
+		7EEBDDBD2C207FCE001605AC /* HomeTabSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBDDBC2C207FCE001605AC /* HomeTabSectionView.swift */; };
+		7EEBDDBF2C208095001605AC /* HomeTabSectionListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBDDBE2C208095001605AC /* HomeTabSectionListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,12 +93,12 @@
 		7E92E01E2C1C8B2D00695B54 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
 		7E92E0202C1C8E9200695B54 /* AllUserTasksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUserTasksResponse.swift; sourceTree = "<group>"; };
 		7E92E0222C1C9A6000695B54 /* HomeTabSectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabSectionListView.swift; sourceTree = "<group>"; };
-		7E92E0242C1CBFBD00695B54 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7E92E0242C1CBFBD00695B54 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		7E92E0282C1CC0FB00695B54 /* UserLocalDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDatasource.swift; sourceTree = "<group>"; };
 		7E92E02A2C1CC10700695B54 /* AuthLocalDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalDatasource.swift; sourceTree = "<group>"; };
 		7E92E02E2C1CC2B000695B54 /* CareSaasTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CareSaasTest.xcdatamodel; sourceTree = "<group>"; };
 		7E92E0302C1CC87C00695B54 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		7E92E0332C1CCB1800695B54 /* UserMO+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserMO+Extensions.swift"; sourceTree = "<group>"; };
+		7E92E0332C1CCB1800695B54 /* CurrentUserMO+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrentUserMO+Extensions.swift"; sourceTree = "<group>"; };
 		7E92E0352C1CD39900695B54 /* DatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseError.swift; sourceTree = "<group>"; };
 		7EDD2A792C1C41B100292319 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		7EDD2A7B2C1C420200292319 /* AuthEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoints.swift; sourceTree = "<group>"; };
@@ -103,6 +109,12 @@
 		7EDD2A842C1C4F9E00292319 /* APIToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIToken.swift; sourceTree = "<group>"; };
 		7EDD2A872C1C4FDF00292319 /* AppUserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaultsKeys.swift; sourceTree = "<group>"; };
 		7EDD2A8C2C1C57E200292319 /* TasksEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksEndpoints.swift; sourceTree = "<group>"; };
+		7EEBDDB42C206EE3001605AC /* UserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTask.swift; sourceTree = "<group>"; };
+		7EEBDDB62C20740F001605AC /* UsersEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersEndpoints.swift; sourceTree = "<group>"; };
+		7EEBDDB82C207C24001605AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7EEBDDBA2C207C37001605AC /* UserDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataResponse.swift; sourceTree = "<group>"; };
+		7EEBDDBC2C207FCE001605AC /* HomeTabSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabSectionView.swift; sourceTree = "<group>"; };
+		7EEBDDBE2C208095001605AC /* HomeTabSectionListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabSectionListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				7E92E0222C1C9A6000695B54 /* HomeTabSectionListView.swift */,
+				7EEBDDBC2C207FCE001605AC /* HomeTabSectionView.swift */,
+				7EEBDDBE2C208095001605AC /* HomeTabSectionListItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,7 +329,9 @@
 		7E7034452C1B8DA30069F118 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				7E92E0242C1CBFBD00695B54 /* User.swift */,
+				7E92E0242C1CBFBD00695B54 /* CurrentUser.swift */,
+				7EEBDDB42C206EE3001605AC /* UserTask.swift */,
+				7EEBDDB82C207C24001605AC /* User.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -335,6 +351,7 @@
 				7EDD2A792C1C41B100292319 /* LoginResponse.swift */,
 				7EDD2A842C1C4F9E00292319 /* APIToken.swift */,
 				7E92E0202C1C8E9200695B54 /* AllUserTasksResponse.swift */,
+				7EEBDDBA2C207C37001605AC /* UserDataResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -428,7 +445,7 @@
 		7E92E0322C1CCAF400695B54 /* Managed Object Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7E92E0332C1CCB1800695B54 /* UserMO+Extensions.swift */,
+				7E92E0332C1CCB1800695B54 /* CurrentUserMO+Extensions.swift */,
 			);
 			path = "Managed Object Extensions";
 			sourceTree = "<group>";
@@ -446,6 +463,7 @@
 			children = (
 				7EDD2A7B2C1C420200292319 /* AuthEndpoints.swift */,
 				7EDD2A8C2C1C57E200292319 /* TasksEndpoints.swift */,
+				7EEBDDB62C20740F001605AC /* UsersEndpoints.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -522,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEBDDB72C20740F001605AC /* UsersEndpoints.swift in Sources */,
 				7E7034342C1B710E0069F118 /* SignInView.swift in Sources */,
 				7E7034382C1B712B0069F118 /* HomeView.swift in Sources */,
 				7E92E02F2C1CC2B000695B54 /* CareSaasTest.xcdatamodeld in Sources */,
@@ -529,29 +548,34 @@
 				7EDD2A7A2C1C41B100292319 /* LoginResponse.swift in Sources */,
 				7E92E0362C1CD39900695B54 /* DatabaseError.swift in Sources */,
 				7E7034412C1B8ABC0069F118 /* FormField.swift in Sources */,
+				7EEBDDBF2C208095001605AC /* HomeTabSectionListItem.swift in Sources */,
 				7E70344C2C1B8E410069F118 /* HomeViewModel.swift in Sources */,
 				7E7034612C1BDD370069F118 /* RepositoryProvider.swift in Sources */,
 				7E7034152C1B69600069F118 /* ContentView.swift in Sources */,
+				7EEBDDBD2C207FCE001605AC /* HomeTabSectionView.swift in Sources */,
 				7E7034562C1B8FAF0069F118 /* SignInFooterView.swift in Sources */,
 				7E7034692C1BDDAF0069F118 /* UserRemoteDatasource.swift in Sources */,
 				7E7034582C1B989A0069F118 /* PrimaryButtonStyle.swift in Sources */,
 				7E7034132C1B69600069F118 /* CareSaasApp.swift in Sources */,
 				7EDD2A812C1C44AE00292319 /* NetworkRequest.swift in Sources */,
-				7E92E0252C1CBFBD00695B54 /* User.swift in Sources */,
+				7E92E0252C1CBFBD00695B54 /* CurrentUser.swift in Sources */,
 				7E7034432C1B8D980069F118 /* SignInViewModel.swift in Sources */,
 				7E70343F2C1B727F0069F118 /* AccountView.swift in Sources */,
 				7E7034672C1BDDA80069F118 /* AuthRemoteDatasource.swift in Sources */,
-				7E92E0342C1CCB1800695B54 /* UserMO+Extensions.swift in Sources */,
+				7E92E0342C1CCB1800695B54 /* CurrentUserMO+Extensions.swift in Sources */,
 				7E70345F2C1BDCFC0069F118 /* NetworkError.swift in Sources */,
 				7EDD2A852C1C4F9E00292319 /* APIToken.swift in Sources */,
 				7E70345B2C1BDCA80069F118 /* HTTPClient.swift in Sources */,
 				7EDD2A882C1C4FDF00292319 /* AppUserDefaultsKeys.swift in Sources */,
 				7E7034632C1BDD660069F118 /* AuthRepository.swift in Sources */,
 				7E92E0212C1C8E9200695B54 /* AllUserTasksResponse.swift in Sources */,
+				7EEBDDBB2C207C37001605AC /* UserDataResponse.swift in Sources */,
 				7EDD2A832C1C4F2900292319 /* AccessTokenManager.swift in Sources */,
 				7E70343D2C1B72760069F118 /* SearchView.swift in Sources */,
+				7EEBDDB52C206EE4001605AC /* UserTask.swift in Sources */,
 				7E92E0292C1CC0FC00695B54 /* UserLocalDatasource.swift in Sources */,
 				7E7034542C1B8F9E0069F118 /* SignInFormView.swift in Sources */,
+				7EEBDDB92C207C24001605AC /* User.swift in Sources */,
 				7EDD2A7E2C1C434200292319 /* EnvironmentKeys.swift in Sources */,
 				7E7034652C1BDD760069F118 /* UserRepository.swift in Sources */,
 				7E92E01F2C1C8B2D00695B54 /* LandingViewModel.swift in Sources */,

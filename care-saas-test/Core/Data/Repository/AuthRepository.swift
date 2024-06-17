@@ -33,7 +33,7 @@ final class AuthRepositoryImpl: AuthRepository {
         let result = await authRemoteDatasource.login(username: username, password: password)
         switch result {
         case .success(let data):
-            userLocalDatasource.saveUser(user: data.data.user.toUserEntity())
+            userLocalDatasource.saveCurrentUser(data.data.user.toCurrentUserEntity())
             return .success(true)
         case .failure(let failure):
             return .failure(failure)

@@ -7,14 +7,14 @@
 
 import Foundation
 
-extension UserMO {
+extension CurrentUserMO {
     public override func awakeFromInsert() {
         super.awakeFromInsert()
         createdAt = Date()
     }
 
-    func toUserEntity() -> User {
-        User(
+    func toUserEntity() -> CurrentUser {
+        CurrentUser(
             userId: userId ?? "",
             name: name ?? "",
             email: email ?? "",

@@ -42,11 +42,11 @@ extension NetworkRequest {
         [:]
     }
 
-    func createURLRequest() throws -> URLRequest {
+    func createURLRequest(accessToken: String) throws -> URLRequest {
         var components = URLComponents()
         components.scheme = "https"
         components.host = host
-        components.path = path
+        components.path = path.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
 
         if !urlParams.isEmpty {
             components.queryItems = urlParams.map {
@@ -66,10 +66,11 @@ extension NetworkRequest {
         }
 
         if addAuthorizationToken {
-            urlRequest.setValue(headers["accessToken"]!, forHTTPHeaderField: "Authorization")
+          urlRequest.setValue(accessToken, forHTTPHeaderField: "Authorization")
         }
 
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
 
         if !params.isEmpty {
             urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params)

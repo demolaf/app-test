@@ -15,20 +15,25 @@ protocol HTTPClient {
 
 class HTTPClientImpl: HTTPClient {
     init(
-        urlSession: URLSession
+        urlSession: URLSession,
+        accessTokenManager: AccessTokenManager
     ) {
         self.urlSession = urlSession
+        self.accessTokenManager = accessTokenManager
     }
 
     let urlSession: URLSession
+    let accessTokenManager: AccessTokenManager
 
     func perform<ResponseType: Decodable>(
         _ request: NetworkRequest
     ) async throws -> ResponseType {
-        let (data, response) = try await urlSession.data(for: request.createURLRequest())
+        let accessToken = accessTokenManager.fetchToken()
+        let (data, response) = try await urlSession.data(for: request.createURLRequest(accessToken: accessToken))
         guard let httpResponse = response as? HTTPURLResponse,
               httpResponse.statusCode == 200 else {
-            debugPrint("Error Server Response \(response)")
+            //debugPrint("Error Server Response \(response)")
+            debugPrint("Error Server Response \(String(data: data, encoding: .utf8)!)")
             throw NetworkError.invalidServerResponse
         }
 

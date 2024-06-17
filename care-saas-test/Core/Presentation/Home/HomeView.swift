@@ -39,12 +39,24 @@ struct HomeView: View {
                 VStack(spacing: 0) {
                     HomeSectionTabView(selectedTab: $selectedTab)
                         .padding(.horizontal, 16)
-                    TabView(selection: $selectedTab) {
-                        HomeTabSectionListView()
-                            .tag(HomeTabSection.medication)
-                        HomeTabSectionListView().tag(HomeTabSection.activities)
+                    if viewModel.isLoading {
+                        VStack {
+                            Spacer()
+                            ProgressView()
+                                .progressViewStyle(CircularProgressViewStyle(tint: .appPrimary))
+                                .scaleEffect(1)
+                                .padding(.vertical, 8)
+                            Spacer()
+                        }
+                    } else {
+                        TabView(selection: $selectedTab) {
+                            HomeTabSectionListView(tasks: viewModel.tasks)
+                                .tag(HomeTabSection.medication)
+                            HomeTabSectionListView(tasks: [])
+                                .tag(HomeTabSection.activities)
+                        }
+                        .tabViewStyle(.page(indexDisplayMode: .never))
                     }
-                    .tabViewStyle(.page(indexDisplayMode: .never))
                 }
             }
             .ignoresSafeArea(.all, edges: .bottom)

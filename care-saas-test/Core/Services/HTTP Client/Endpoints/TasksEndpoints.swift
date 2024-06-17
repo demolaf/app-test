@@ -12,22 +12,22 @@ enum TasksEndpoints: NetworkRequest {
 
     var path: String {
         switch self {
-        case .tasks(let shortCode, let careHomeId, _):
-            return "/v1/services/tasks/\(shortCode)/careHome/\(careHomeId)"
+        case let .tasks(shortCode, careHomeId, _):
+            return "/caresaas/v1/services/tasks/\(shortCode)/careHome/\(careHomeId)"
         }
     }
 
-    var params: [String : Any] {
+    var urlParams: [String : String?] {
         switch self {
-        case .tasks(_, _, let userId):
-            [
-                "userId": userId
+        case let .tasks(_, _, userId):
+            return [
+                "assignee": userId
             ]
         }
     }
 
     var addAuthorizationToken: Bool {
-        false
+        true
     }
 
     var requestType: NetworkRequestType {

@@ -8,6 +8,7 @@
 import Foundation
 
 enum NetworkError: Error {
+    case tokenExpired
     case invalidURL
     case invalidServerResponse
     case parseError(message: String)
